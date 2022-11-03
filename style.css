@@ -1,0 +1,518 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+
+:root {
+  /*
+  --main-letters-color: #1e0e62;
+  --white-background-color: #ffffff;
+  --creme-background-color: #f1f1f1;
+  --description-letters-color: rgba(21, 20, 57, 0.4);
+*/
+
+  --main-letters-color: #ffffff;
+  --white-background-color: #202120;
+  --creme-background-color: #191a19;
+  --description-letters-color: rgba(229, 229, 237, 0.4);
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  font-family: "DM Sans", sans-serif;
+  font-style: normal;
+}
+
+.container {
+  max-width: 1500px;
+  margin-left: 260px;
+  margin-right: 260px;
+}
+
+.column {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/*------------------------------------------------------/* Css of Header */ /*----------------------------------------------*/
+
+header {
+  display: flex;
+  height: 100px;
+  background-color: var(--white-background-color);
+}
+
+header div {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+/*Title*/
+
+header div h1 {
+  width: 190px;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 31px;
+  /* identical to box height */
+
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: -0.292683px;
+
+  /* Colors / Heading */
+  color: var(--main-letters-color);
+}
+
+header div nav {
+  display: flex;
+}
+
+header div nav ol {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header div nav ol ul a {
+  /* Sign Up */
+  padding: auto;
+  margin: 15px;
+  width: auto;
+  height: 22px;
+
+  /* Buttons / Small */
+
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  /* identical to box height, or 138% */
+
+  display: flex;
+  text-align: center;
+  text-decoration: none;
+
+  /* Colors / Heading */
+  color: var(--main-letters-color);
+}
+
+/*------------------------------------------------------/* Css of My info */ /*----------------------------------------------*/
+
+/* My name */
+
+.Mi-info {
+  display: flex;
+  height: 650px;
+  flex-direction: row;
+  background-color: var(--creme-background-color);
+}
+
+.Mi-info_div {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 45px;
+  max-width: 550px;
+  margin-top: 110px;
+  margin-bottom: 50px;
+}
+
+.Mi-info-div_h2 {
+  left: 8.29%;
+  right: 61.57%;
+  top: 20.96%;
+  bottom: 46.54%;
+
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 55px;
+  line-height: 60px;
+
+  display: flex;
+  flex-direction: column;
+  /* Colors / Heading */
+
+  color: var(--main-letters-color);
+}
+
+.Mi-info-div_h2_span {
+  display: flex;
+  flex-direction: row;
+  color: #5fb4ff;
+  margin: 0;
+  padding: 0;
+}
+
+.Mi-info_p {
+  left: 8.29%;
+  right: 65.36%;
+  top: 53.46%;
+  bottom: 17.12%;
+
+  display: flex;
+  margin-bottom: 89px;
+  flex-direction: column;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  /* or 118% */
+
+  /* Colors / Text */
+
+  color: var(--description-letters-color);
+
+  mix-blend-mode: normal;
+}
+
+.Mi-info-div-MyImg {
+  display: flex;
+  margin: 15px;
+  margin-right: 0px;
+}
+
+.Mi-info-div-MyImg_img {
+  display: flex;
+  flex-direction: row;
+  width: 300px;
+  border-radius: 10px;
+}
+
+/*------------------------------------------------------/* Css of My habilities */ /*----------------------------------------------*/
+
+.My-habilities {
+  display: flex;
+  background-color: var(--creme-background-color);
+  flex-direction: column;
+}
+
+.My-habilities_main {
+  margin-top: 100px;
+  gap: 50px;
+  margin-bottom: 120px;
+  display: flex;
+  flex-direction: column;
+}
+
+.My-habilities_h3 {
+  display: flex;
+  /* Heading / H3 Title */
+
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 52px;
+  justify-content: center;
+
+  /* identical to box height, or 124% */
+
+  text-align: center;
+  letter-spacing: -0.4px;
+
+  /* Colors / Heading */
+
+  color: var(--main-letters-color);
+}
+
+.My-habilities_p {
+  /* The most important p */
+
+  left: 21.71%;
+  right: 21.64%;
+  top: 27.43%;
+  bottom: 63.43%;
+
+  /* Heading / H5 Lead */
+
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 32px;
+  /* or 145% */
+
+  text-align: center;
+
+  /* Colors / Text */
+
+  color: var(--description-letters-color);
+
+  mix-blend-mode: normal;
+}
+
+.My-habilities-info {
+  display: flex;
+  margin: 50px;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.My-habilities-info_description {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  max-width: 266px;
+  padding: 15px;
+  gap: 15px;
+}
+
+.My-habilities-info_description_img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  margin: 15px;
+}
+
+.My-habilities-info_description_img:hover {
+  transition: 0.09s;
+  width: 75px;
+}
+
+.My-habilities-info-description_h3 {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+
+  /* Text / Article */
+
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  /* identical to box height, or 156% */
+
+  text-align: center;
+
+  /* Colors / Heading */
+
+  color: var(--main-letters-color);
+}
+
+.My-habilities-info-description_p {
+  display: flex;
+
+  /* Text / Paragraph */
+
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  /* or 162% */
+
+  text-align: center;
+
+  /* Colors / Text */
+
+  color: var(--description-letters-color);
+  mix-blend-mode: normal;
+}
+
+/*------------------------------------------------------/* Css of My experiencies */ /*----------------------------------------------*/
+
+.My-Experiencies {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background-color: var(--creme-background-color);
+}
+
+.My-Experiencies_Main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 17px;
+}
+
+.My-Experiencies_title {
+  display: flex;
+  /* Heading / H3 Title */
+  margin-top: 100px;
+
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 52px;
+  /* identical to box height, or 124% */
+
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  letter-spacing: -0.4px;
+
+  /* Colors / Heading */
+
+  color: var(--main-letters-color);
+}
+
+.My-Experiencies_description {
+  display: flex;
+  width: 758px;
+  margin: auto;
+
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 32px;
+  /* or 145% */
+
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+
+  /* Colors / Text */
+
+  color: var(--description-letters-color);
+
+  mix-blend-mode: normal;
+}
+
+.My-Experiencies_DivBtn {
+  display: flex;
+  text-decoration: none;
+  justify-content: center;
+  margin: 65px;
+  margin-bottom: 91px;
+}
+
+.My-Experiencies_DivBtn a {
+  text-decoration: none;
+}
+
+.My-Experiencies-DivBtn_Btn {
+  /* Action / Primary */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+  font-size: 17px;
+  border: none;
+  text-decoration: none;
+
+  background: #5fb4ff;
+  color: white;
+  border-radius: 100px;
+
+  cursor: pointer;
+}
+
+.My-Experiencies_Works {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.My-Experiencies_Works_Div {
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+}
+
+.My-Experiencies_Works_Div_img {
+  display: flex;
+  width: 370px;
+  height: 220px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.My-Experiencies_Works_Div_h5 {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 32px;
+  /* identical to box height, or 145% */
+
+  /* Colors / Heading */
+
+  color: var(--main-letters-color);
+}
+.My-Experiencies_Works_Div_p {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  width: 347px;
+
+  /* Colors / Text */
+
+  color: var(--description-letters-color);
+
+  mix-blend-mode: normal;
+}
+
+/*------------------------------------------------------/* Css of Footer */ /*----------------------------------------------*/
+
+footer {
+  gap: 5px;
+  height: 700px;
+  background-color: var(--creme-background-color);
+}
+
+.footer_h5 {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 58px;
+  line-height: 70px;
+  padding-top: 200px;
+  /* identical to box height, or 121% */
+
+  text-align: center;
+  letter-spacing: -1px;
+
+  /* Colors / Heading */
+
+  color: var(--main-letters-color);
+}
+
+.footer_description {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 58px;
+  line-height: 70px;
+  /* or 121% */
+
+  text-align: center;
+  letter-spacing: -1px;
+
+  /* Action / Secondary */
+
+  color: #482be7;
+}
+
+.footer_divSocialMedia {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 120px;
+  gap: 60px;
+}
+
+.footer_socialMedia {
+  text-decoration: none;
+}
