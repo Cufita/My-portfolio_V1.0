@@ -13,6 +13,4 @@ icon.onclick = function () {
   }
 };
 
-body.addEventListener("scroll", (e) => {
-  e.preventDefault;
-});
+body.addEventListener("", () => {});
