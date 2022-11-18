@@ -35,6 +35,10 @@
   align-items: center;
   justify-content: space-between;
 }
+.hr {
+  margin: none;
+  padding: none;
+}
 
 /*------------------------------------------------------/* Css of Header */ /*----------------------------------------------*/
 
@@ -147,7 +151,7 @@ header div nav ol ul a {
   font-family: "DM Sans";
   font-style: normal;
   font-weight: 700;
-  font-size: 55px;
+  font-size: 57px;
   line-height: 60px;
 
   display: flex;
@@ -173,7 +177,6 @@ header div nav ol ul a {
   bottom: 17.12%;
 
   display: flex;
-  margin-bottom: 89px;
   flex-direction: column;
   font-family: "DM Sans";
   font-style: normal;
@@ -187,6 +190,16 @@ header div nav ol ul a {
   color: var(--description-letters-color);
 
   mix-blend-mode: normal;
+}
+
+.Mi-info_technologies {
+  display: flex;
+}
+
+.Mi-info_technologies img {
+  display: flex;
+  width: 50px;
+  margin: 5px;
 }
 
 .Mi-info-div-MyImg {
@@ -208,14 +221,28 @@ header div nav ol ul a {
   display: flex;
   background-color: var(--creme-background-color);
   flex-direction: column;
+  height: 1000px;
 }
 
 .My-habilities_main {
   margin-top: 100px;
-  gap: 35px;
+  gap: 15px;
   margin-bottom: 120px;
   display: flex;
   flex-direction: column;
+}
+
+.My-habilities_main-divimg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.My-habilities_main-divimg_img {
+  display: flex;
+  width: 90px;
+  margin-top: 15px;
 }
 
 .My-habilities_h3 {
@@ -353,10 +380,21 @@ header div nav ol ul a {
   gap: 17px;
 }
 
+.My-Experiencies_Main-DivImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+}
+
+.My-Experiencies_Main-DivImg_img {
+  display: flex;
+  width: 85px;
+}
+
 .My-Experiencies_title {
   display: flex;
   /* Heading / H3 Title */
-  margin-top: 100px;
 
   font-family: "DM Sans";
   font-style: normal;
@@ -489,9 +527,14 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   gap: 5px;
-  height: 700px;
+  height: 900px;
   background-color: var(--creme-background-color);
+}
+
+.footer a {
+  text-decoration: none;
 }
 
 .footer_h5 {
@@ -504,9 +547,6 @@ footer {
   padding-top: 200px;
   /* identical to box height, or 121% */
 
-  text-align: center;
-  justify-content: center;
-  align-items: center;
   letter-spacing: -1px;
 
   /* Colors / Heading */
@@ -515,6 +555,7 @@ footer {
 }
 
 .footer_description {
+  display: flex;
   font-family: "DM Sans";
   font-style: normal;
   font-weight: 700;
@@ -522,10 +563,6 @@ footer {
   line-height: 70px;
   /* or 121% */
 
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
   letter-spacing: -1px;
 
   /* Action / Secondary */
@@ -542,5 +579,6 @@ footer {
 }
 
 .footer_socialMedia {
+  display: flex;
   text-decoration: none;
 }
