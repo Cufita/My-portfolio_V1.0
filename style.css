@@ -1,0 +1,658 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+
+:root {
+  --main-letters-color: #1e0e62;
+  --white-background-color: #ffffff;
+  --creme-background-color: #f1f1f1;
+  --description-letters-color: rgba(21, 20, 57, 0.4);
+}
+.dark-theme {
+  --main-letters-color: #ffffff;
+  --white-background-color: #202120;
+  --creme-background-color: #191a19;
+  --description-letters-color: rgba(229, 229, 237, 0.4);
+}
+
+* {
+  transition: 0.3s ease;
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  font-family: "DM Sans", sans-serif;
+  font-style: normal;
+}
+
+.container {
+  margin-left: 260px;
+  margin-right: 260px;
+}
+
+.column {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hr {
+  margin: none;
+  padding: none;
+}
+
+/*------------------------------------------------------/* Css of Header */ /*----------------------------------------------*/
+
+header {
+  display: flex;
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  height: 100px;
+  background-color: var(--white-background-color);
+}
+
+.headerScroll {
+  height: 80px;
+  transition: 1s ease all;
+}
+
+header div {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+/*Title*/
+
+header div h1 {
+  width: 190px;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 31px;
+  /* identical to box height */
+
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: -0.292683px;
+
+  /* Colors / Heading */
+  color: var(--main-letters-color);
+}
+
+header div nav {
+  display: flex;
+}
+
+header div nav ol {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+header div nav ol ul a {
+  /* Sign Up */
+  margin: 15px;
+  width: auto;
+  height: 22px;
+
+  /* Buttons / Small */
+
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  /* identical to box height, or 138% */
+
+  display: flex;
+  text-align: center;
+  text-decoration: none;
+  /* Colors / Heading */
+  color: var(--main-letters-color);
+}
+
+header div nav ol ul a:after{
+  content: "";
+  width: 0;
+  height: 4px;
+  background-color: #5fb4ff;
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  transition: all .5s;
+  will-change: width;
+}
+
+header div nav ol ul a:hover:after{
+  width: 100%;
+  right: 0;
+  color: #856fff;
+}
+
+header div nav ol ul a button{
+  width: 85px;
+  height: 25px;
+  margin: none;
+  border-radius: 5px;
+  color: white;
+  background-color: #5fb4ff;
+  border: none;
+
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+}
+
+header div nav ol ul a button:hover{
+  background-color: #2599ff;
+}
+
+.lightDarkBtn {
+  cursor: pointer;
+  margin: 10px;
+  width: 35px;
+}
+
+/*------------------------------------------------------/* Css of My info */ /*----------------------------------------------*/
+
+/* My name */
+
+.Mi-info {
+  display: flex;
+  height: 800px;
+  flex-direction: row;
+  background-color: var(--creme-background-color);
+}
+
+.Mi-info_div {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 45px;
+  max-width: 550px;
+  margin-top: 110px;
+  margin-bottom: 50px;
+}
+
+.Mi-info-div_h2 {
+  left: 8.29%;
+  right: 61.57%;
+  top: 20.96%;
+  bottom: 46.54%;
+
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 57px;
+  line-height: 60px;
+
+  display: flex;
+  flex-direction: column;
+  /* Colors / Heading */
+
+  color: var(--main-letters-color);
+}
+
+.Mi-info-div_h2_span {
+  display: flex;
+  flex-direction: row;
+  color: #5fb4ff;
+  margin: 0;
+  padding: 0;
+  transition: 1s ease;
+}
+
+.Mi-info_p {
+  left: 8.29%;
+  right: 65.36%;
+  top: 53.46%;
+  bottom: 17.12%;
+
+  display: flex;
+  flex-direction: column;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  /* or 118% */
+
+  /* Colors / Text */
+
+  color: var(--description-letters-color);
+
+  mix-blend-mode: normal;
+}
+
+.Mi-info_technologies {
+  display: flex;
+}
+
+.Mi-info_technologies img {
+  display: flex;
+  width: 50px;
+  margin: 5px;
+}
+
+.Mi-info-div-MyImg {
+  display: flex;
+  margin: 15px;
+  margin-right: 0px;
+}
+
+.Mi-info-div-MyImg_img {
+  display: flex;
+  flex-direction: row;
+  width: 300px;
+  border-radius: 10px;
+}
+
+/*------------------------------------------------------/* Css of My habilities */ /*----------------------------------------------*/
+
+.My-habilities {
+  display: flex;
+  background-color: var(--creme-background-color);
+  flex-direction: column;
+  height: 850px;
+}
+
+.My-habilities_main {
+  margin-top: 80px;
+  gap: 15px;
+  margin-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+}
+
+.My-habilities_main-divimg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.My-habilities_main-divimg_img {
+  display: flex;
+  width: 90px;
+  margin-top: 15px;
+}
+
+.My-habilities_h3 {
+  display: flex;
+  /* Heading / H3 Title */
+
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 52px;
+  justify-content: center;
+
+  /* identical to box height, or 124% */
+
+  text-align: center;
+  letter-spacing: -0.4px;
+
+  /* Colors / Heading */
+
+  color: var(--main-letters-color);
+}
+
+.My-habilities_p {
+  /* The most important p */
+
+  left: 21.71%;
+  right: 21.64%;
+  top: 27.43%;
+  bottom: 63.43%;
+
+  /* Heading / H5 Lead */
+
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 32px;
+  /* or 145% */
+
+  text-align: center;
+
+  /* Colors / Text */
+
+  color: var(--description-letters-color);
+
+  mix-blend-mode: normal;
+}
+
+.My-habilities-info {
+  display: flex;
+  margin: 50px;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.My-habilities-info_description {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  max-width: 266px;
+  padding: 15px;
+  gap: 15px;
+}
+
+.My-habilities-info_description_img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  margin: 15px;
+}
+
+.My-habilities-info-description_h3 {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+
+  /* Text / Article */
+
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  /* identical to box height, or 156% */
+
+  text-align: center;
+
+  /* Colors / Heading */
+
+  color: var(--main-letters-color);
+}
+
+.My-habilities-info-description_p {
+  display: flex;
+
+  /* Text / Paragraph */
+
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  /* or 162% */
+
+  text-align: center;
+
+  /* Colors / Text */
+
+  color: var(--description-letters-color);
+  mix-blend-mode: normal;
+}
+
+/*------------------------------------------------------/* Css of My experiencies */ /*----------------------------------------------*/
+
+.My-Experiencies {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background-color: var(--creme-background-color);
+}
+
+.My-Experiencies_Main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 17px;
+}
+
+.My-Experiencies_Main-DivImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+}
+
+.My-Experiencies_Main-DivImg_img {
+  display: flex;
+  width: 85px;
+}
+
+.My-Experiencies_title {
+  display: flex;
+  /* Heading / H3 Title */
+
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 52px;
+  /* identical to box height, or 124% */
+
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  letter-spacing: -0.4px;
+
+  /* Colors / Heading */
+
+  color: var(--main-letters-color);
+}
+
+.My-Experiencies_description {
+  display: flex;
+  width: 758px;
+  margin: auto;
+
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 32px;
+  /* or 145% */
+
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+
+  /* Colors / Text */
+
+  color: var(--description-letters-color);
+
+  mix-blend-mode: normal;
+}
+
+.My-Experiencies_DivBtn {
+  display: flex;
+  text-decoration: none;
+  justify-content: center;
+  margin: 65px;
+  margin-bottom: 91px;
+}
+
+.My-Experiencies_DivBtn a {
+  text-decoration: none;
+}
+
+.My-Experiencies-DivBtn_Btn {
+  /* Action / Primary */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+  font-size: 17px;
+  border: none;
+  text-decoration: none;
+
+  background: #5fb4ff;
+  color: white;
+  border-radius: 100px;
+
+  cursor: pointer;
+}
+
+.My-Experiencies-DivBtn_Btn:hover {
+  background: #269afe;
+}
+
+.My-Experiencies_Works {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.My-Experiencies_Works_Div {
+  display: flex;
+  width: 370px;
+  height: 220px;
+  flex-direction: column;
+  margin: 15px;
+}
+
+.My-Experiencies_Works_Div a{
+  display: flex;
+  width: 370px;
+  height: 220px;
+}
+
+.My-Experiencies_Works_Div_img {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.My-Experiencies_Works_Div_img:hover{
+  transform: scale(1.1);
+}
+
+.My-Experiencies_Works_Div_Tools{
+  display: flex;
+  flex-direction: row;
+  margin-top: 25px;
+}
+
+.My-Experiencies_Works_Div_ToolsImg{
+  display: flex;
+  width: 25px;
+}
+
+.My-Experiencies_Works_Div_h5 {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 32px;
+  margin-top: 10px;
+  /* identical to box height, or 145% */
+
+  /* Colors / Heading */
+
+  color: var(--main-letters-color);
+}
+.My-Experiencies_Works_Div_p {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  width: 347px;
+
+  /* Colors / Text */
+
+  color: var(--description-letters-color);
+
+  mix-blend-mode: normal;
+}
+
+.My-Experiencies_Works_Div_p b{
+  font-size: 18px;
+}
+
+/*------------------------------------------------------/* Css of Footer */ /*----------------------------------------------*/
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+  height: 1000px;
+  background-color: var(--creme-background-color);
+}
+
+.footer a {
+  text-decoration: none;
+}
+
+.footer_h5 {
+  display: flex;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 58px;
+  line-height: 70px;
+  padding-top: 200px;
+  /* identical to box height, or 121% */
+
+  letter-spacing: -1px;
+
+  /* Colors / Heading */
+
+  color: var(--main-letters-color);
+}
+
+.footer_description {
+  display: flex;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 58px;
+  line-height: 70px;
+  /* or 121% */
+
+  letter-spacing: -1px;
+
+  /* Action / Secondary */
+
+  color: #482be7;
+}
+
+.footer_description:hover{
+  color: #5f43ff
+}
+
+.footer_divSocialMedia {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 120px;
+  gap: 60px;
+}
+
+.footer_socialMedia {
+  display: flex;
+  text-decoration: none;
+}
