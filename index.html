@@ -6,19 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" type="image/x-icon" href="./img/favicon.png" />
+    <!--Loading Animation on Scroll for the webpage -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <title>Facundo Amores | Frontend Developer</title>
   </head>
   <body id="body">
-    <header id="header">
+    <header id="header" >
       <div class="container">
         <h1>FacuAmores.com</h1>
         <nav>
           <ol>
             <ul>
-              <a href="mailto:facuamores@gmail.com">Email</a>
+              <a href="mailto:facuamores@gmail.com"><button>Email</button></a>
             </ul>
             <ul>
-              <a href="#My-habilities">My habilities</a>
+              <a href="#My-habilities">My abilities</a>
             </ul>
             <ul>
               <a href="#My-Experiencies">My experiencies</a>
@@ -33,8 +36,8 @@
         </nav>
       </div>
     </header>
-    <section id="Mi-info" class="Mi-info">
-      <div class="container column">
+    <section id="Mi-info" class="Mi-info" >
+      <div class="container column" data-aos="zoom-in-down">
         <div class="Mi-info_div">
           <h2 class="Mi-info-div_h2">
             Welcome, i'm Facu.<span class="Mi-info-div_h2_span">
@@ -47,12 +50,12 @@
             showing my skills to the world.
           </p>
           <div class="Mi-info_technologies">
-            <img src="./img/html-5.png" alt="">
-            <img src="./img/css-3.png" alt="">
-            <img src="./img/js.png" alt="">
-            <img src="./img/React.jpg" alt="">
-            <img src="./img/figma.png" alt="">
-            <img src="./img/git.png" alt="">
+            <img src="./img/html-5.png" alt="HTML">
+            <img src="./img/css-3.png" alt="CSS">
+            <img src="./img/js.png" alt="Javascript">
+            <img src="./img/React.jpg" alt="React.js">
+            <img src="./img/figma.png" alt="Figma">
+            <img src="./img/git.png" alt="Git">
           </div>
         </div>
         <div class="Mi-info-div-MyImg">
@@ -70,48 +73,59 @@
           <div class="My-habilities_main-divimg"><img class="My-habilities_main-divimg_img" src="./img/tool-box.png" alt="Tool Box"></div>
           <h3 class="My-habilities_h3">My skills</h3>
           <p class="My-habilities_p">
-            My main abilities as a Frontend Programmer are the following languages:
+            My main abilities as a Frontend Developer are the following languages:
           </p>
         </div>
         <div class="My-habilities-info">
-          <div class="My-habilities-info_description">
+          <div class="My-habilities-info_description" data-aos="zoom-in-down">
+            <img
+              class="My-habilities-info_description_img"
+              src="./img/html-5.png"
+              alt=""
+            />
+            <h3 class="My-habilities-info-description_h3">HTML5</h3>
+          </div>
+          <div class="My-habilities-info_description" data-aos="zoom-in-down">
+            <img
+              class="My-habilities-info_description_img"
+              src="./img/css-3.png"
+              alt=""
+            />
+            <h3 class="My-habilities-info-description_h3">CSS3</h3>
+          </div>
+          <div class="My-habilities-info_description" data-aos="zoom-in-down">
+            <img
+              class="My-habilities-info_description_img"
+              src="./img/javascript.png"
+              alt=""
+            />
+            <h3 class="My-habilities-info-description_h3">Javascript</h3>
+          </div>
+        </div>
+        <div class="My-habilities-info">
+          <div class="My-habilities-info_description" data-aos="zoom-in-down">
             <img
               class="My-habilities-info_description_img"
               src="./img/React.jpg"
               alt=""
             />
             <h3 class="My-habilities-info-description_h3">ReactJs</h3>
-            <p class="My-habilities-info-description_p">
-              Creation of web applications with all the most important of the
-              most famous library. Components, Hooks, React-Router-Dom with
-              React.Js
-            </p>
           </div>
-          <div class="My-habilities-info_description">
+          <div class="My-habilities-info_description" data-aos="zoom-in-down">
             <img
               class="My-habilities-info_description_img"
-              src="./img/Typescript.jpg"
+              src="./img/figma.png"
               alt=""
             />
-            <h3 class="My-habilities-info-description_h3">Typescript</h3>
-            <p class="My-habilities-info-description_p">
-              Taking advantage of the full power of Javascript combined with
-              typing strong as this booming language, allows successful projects
-              with him.
-            </p>
+            <h3 class="My-habilities-info-description_h3">Figma</h3>
           </div>
-          <div class="My-habilities-info_description">
+          <div class="My-habilities-info_description" data-aos="zoom-in-down">
             <img
               class="My-habilities-info_description_img"
               src="./img/git.png"
               alt=""
             />
-            <h3 class="My-habilities-info-description_h3">Git y GitHub</h3>
-            <p class="My-habilities-info-description_p">
-              The most popular version controller in the IT world. Combined with
-              the power of GitHub to be able to host all your tasks and files
-              valuable.
-            </p>
+            <h3 class="My-habilities-info-description_h3">GitHub</h3>
           </div>
         </div>
       </div>
@@ -119,68 +133,87 @@
     <section id="My-Experiencies" class="My-Experiencies">
       <div class="container">
         <div class="My-Experiencies_Main">
-          <div class="My-Experiencies_Main-DivImg"><img class="My-Experiencies_Main-DivImg_img" src="./img/performance.png" alt="Experiencies"></div>
-          <h3 class="My-Experiencies_title">Mi experiencia</h3>
+          <div class="My-Experiencies_Main-DivImg">
+            <img class="My-Experiencies_Main-DivImg_img" src="./img/performance.png" alt="Experiencies">
+          </div>
+          <h3 class="My-Experiencies_title">My experience</h3>
           <p class="My-Experiencies_description">
-            Experiencia de anteriores empleos o trabajos que he realizado
-            durante mi travesia en la programacion Web. :)
+            Experience in work I did before for companies or for own development
           </p>
         </div>
         <div class="My-Experiencies_DivBtn">
           <a href="https://github.com/Cufita">
             <button class="My-Experiencies-DivBtn_Btn">
-              GitHub o Contacto
+              GitHub or Contact
             </button>
           </a>
         </div>
-        <div class="My-Experiencies_Works">
-          <div class="My-Experiencies_Works_Div">
-            <img
+        <div class="My-Experiencies_Works" data-aos="flip-left">
+          <div class="My-Experiencies_Works_Div" >
+            <a href="https://the-wild-proyect.web.app/"><img
               class="My-Experiencies_Works_Div_img"
               src="./img/TheWildProyect.png"
               alt=""
-            />
-            <h5 class="My-Experiencies_Works_Div_h5">Trabajo Real #1</h5>
+            /></a>
+            <div class="My-Experiencies_Works_Div_Tools">
+              <img class="My-Experiencies_Works_Div_ToolsImg" src="./img/html-5.png" alt="HTML">
+              <img class="My-Experiencies_Works_Div_ToolsImg" src="./img/css-3.png" alt="CSS">
+              <img class="My-Experiencies_Works_Div_ToolsImg" src="./img/git.png" alt="Git">
+            </div>
+            <h5 class="My-Experiencies_Works_Div_h5">The Wild Proyect</h5>
             <p class="My-Experiencies_Works_Div_p">
-              Este fue mi primer trabajo realizado unicamente con Html y Css
-              sobre el podcast de Jordi Wild. Completamente responsive
-              integrando la API de Spotify.
+              This work was done with Spotify's <b>Api-Rest</b>, completely <b> Responsive </b>.
+               Integrating <b>Meta descriptions </b> for <b> SEO positioning. </b>
             </p>
           </div>
-          <div class="My-Experiencies_Works_Div">
-            <img
+          <div class="My-Experiencies_Works_Div" >
+            <a href="https://latruchitienda.web.app/"><img
+              class="My-Experiencies_Works_Div_img"
+              src="./img/Truchitienda.png"
+              alt=""
+            /></a>
+            <div class="My-Experiencies_Works_Div_Tools">
+              <img class="My-Experiencies_Works_Div_ToolsImg" src="./img/html-5.png" alt="HTML">
+              <img class="My-Experiencies_Works_Div_ToolsImg" src="./img/css-3.png" alt="CSS">
+              <img class="My-Experiencies_Works_Div_ToolsImg" src="./img/javascript.png" alt="Javascript">
+              <img class="My-Experiencies_Works_Div_ToolsImg" src="./img/git.png" alt="Git">
+            </div>
+            <h5 class="My-Experiencies_Works_Div_h5">La truchitienda</h5>
+            <p class="My-Experiencies_Works_Div_p">
+              This is a <b> To-do-list </b> project of your supermarket shopping list that
+              is designed <b> Mobile First </b> with a minimalist design
+            </p>
+          </div>
+          <div class="My-Experiencies_Works_Div" >
+            <a href="https://facuamoresportfolio.vercel.app/">
+              <img
               class="My-Experiencies_Works_Div_img"
               src="./img/Truchitienda.png"
               alt=""
             />
-            <h5 class="My-Experiencies_Works_Div_h5">Trabajo Real #2</h5>
-            <p class="My-Experiencies_Works_Div_p">
-              Este fue un proyecto realizado para CodeaRock. Un To-Do List de
-              lista de compras. Implementando Html, Css y Javascript. Realizado
-              Mobile First
-            </p>
-          </div>
-          <div class="My-Experiencies_Works_Div">
-            <img
-              class="My-Experiencies_Works_Div_img"
-              src="./img/TheWildProyect.png"
-              alt=""
-            />
+            </a>
+            <div class="My-Experiencies_Works_Div_Tools">
+              <img class="My-Experiencies_Works_Div_ToolsImg" src="./img/html-5.png" alt="HTML">
+              <img class="My-Experiencies_Works_Div_ToolsImg" src="./img/css-3.png" alt="CSS">
+              <img class="My-Experiencies_Works_Div_ToolsImg" src="./img/javascript.png" alt="Javascript">
+              <img class="My-Experiencies_Works_Div_ToolsImg" src="./img/figma.png" alt="Figma">
+              <img class="My-Experiencies_Works_Div_ToolsImg" src="./img/git.png" alt="Git">
+            </div>
             <h5 class="My-Experiencies_Works_Div_h5">
-              Trabajo en Desarrollo #3
+              Professional portfolio
             </h5>
             <p class="My-Experiencies_Works_Div_p">
-              Ecommerce realizado con Html, Css y Javascript con consignas de
-              CodeaRock. Integrando la API de fakestore.api. Actualmente en
-              desarrollo :).
+              Portfolio with dark mode made to show my skills and my jobs. 
+             <b>Responsive</b> and animated with the <b> AoS library.js </b>
             </p>
           </div>
         </div>
       </div>
     </section>
-    <footer id="footer" class="footer">
-      <h5 class="footer_h5">If you want to be in contact with me :</h5>
-      <a href="mailto:facuamores@gmail.com"><p class="footer_description">facuamores@gmail.com</p></a>
+    <footer id="footer" class="footer" >
+    <footer id="footer" class="footer" >
+      <h5 class="footer_h5" data-aos="zoom-in">If you want to be in contact with me :</h5>
+      <a href="mailto:facuamores@gmail.com" ><p class="footer_description" data-aos="zoom-in">facuamores@gmail.com</p></a>
       <div class="footer_divSocialMedia">
         <a
           class="footer_socialMedia"

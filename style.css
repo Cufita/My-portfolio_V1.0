@@ -23,7 +23,6 @@
 }
 
 .container {
-  max-width: 1500px;
   margin-left: 260px;
   margin-right: 260px;
 }
@@ -35,6 +34,7 @@
   align-items: center;
   justify-content: space-between;
 }
+
 .hr {
   margin: none;
   padding: none;
@@ -45,6 +45,7 @@
 header {
   display: flex;
   position: fixed;
+  z-index: 99;
   width: 100%;
   height: 100px;
   background-color: var(--white-background-color);
@@ -90,11 +91,11 @@ header div nav ol {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  width: 100%;
 }
 
 header div nav ol ul a {
   /* Sign Up */
-  padding: auto;
   margin: 15px;
   width: auto;
   height: 22px;
@@ -115,6 +116,50 @@ header div nav ol ul a {
   color: var(--main-letters-color);
 }
 
+header div nav ol ul a:after{
+  content: "";
+  width: 0;
+  height: 4px;
+  background-color: #5fb4ff;
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  transition: all .5s;
+  will-change: width;
+}
+
+header div nav ol ul a:hover:after{
+  width: 100%;
+  right: 0;
+  color: #856fff;
+}
+
+header div nav ol ul a button{
+  width: 85px;
+  height: 25px;
+  margin: none;
+  border-radius: 5px;
+  color: white;
+  background-color: #5fb4ff;
+  border: none;
+
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+}
+
+header div nav ol ul a button:hover{
+  background-color: #2599ff;
+}
+
 .lightDarkBtn {
   cursor: pointer;
   margin: 10px;
@@ -127,7 +172,7 @@ header div nav ol ul a {
 
 .Mi-info {
   display: flex;
-  height: 850px;
+  height: 800px;
   flex-direction: row;
   background-color: var(--creme-background-color);
 }
@@ -221,13 +266,13 @@ header div nav ol ul a {
   display: flex;
   background-color: var(--creme-background-color);
   flex-direction: column;
-  height: 1000px;
+  height: 850px;
 }
 
 .My-habilities_main {
-  margin-top: 100px;
+  margin-top: 80px;
   gap: 15px;
-  margin-bottom: 120px;
+  margin-bottom: 80px;
   display: flex;
   flex-direction: column;
 }
@@ -314,11 +359,6 @@ header div nav ol ul a {
   align-items: center;
   width: 70px;
   margin: 15px;
-}
-
-.My-habilities-info_description_img:hover {
-  transition: 0.09s;
-  width: 75px;
 }
 
 .My-habilities-info-description_h3 {
@@ -476,22 +516,47 @@ header div nav ol ul a {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
 }
 
 .My-Experiencies_Works_Div {
   display: flex;
+  width: 370px;
+  height: 220px;
   flex-direction: column;
   margin: 15px;
 }
 
-.My-Experiencies_Works_Div_img {
+.My-Experiencies_Works_Div a{
   display: flex;
   width: 370px;
   height: 220px;
+}
+
+.My-Experiencies_Works_Div_img {
+  display: flex;
+  width: 100%;
+  height: 100%;
   border-radius: 10px;
   margin-bottom: 20px;
   cursor: pointer;
+  transition: 0.5s;
+}
+
+.My-Experiencies_Works_Div_img:hover{
+  transform: scale(1.1);
+}
+
+.My-Experiencies_Works_Div_Tools{
+  display: flex;
+  flex-direction: row;
+  margin-top: 25px;
+}
+
+.My-Experiencies_Works_Div_ToolsImg{
+  display: flex;
+  width: 25px;
 }
 
 .My-Experiencies_Works_Div_h5 {
@@ -500,6 +565,7 @@ header div nav ol ul a {
   font-weight: 500;
   font-size: 22px;
   line-height: 32px;
+  margin-top: 10px;
   /* identical to box height, or 145% */
 
   /* Colors / Heading */
@@ -521,6 +587,10 @@ header div nav ol ul a {
   mix-blend-mode: normal;
 }
 
+.My-Experiencies_Works_Div_p b{
+  font-size: 18px;
+}
+
 /*------------------------------------------------------/* Css of Footer */ /*----------------------------------------------*/
 
 footer {
@@ -529,7 +599,7 @@ footer {
   align-items: center;
   flex-direction: column;
   gap: 5px;
-  height: 900px;
+  height: 1000px;
   background-color: var(--creme-background-color);
 }
 
@@ -568,6 +638,10 @@ footer {
   /* Action / Secondary */
 
   color: #482be7;
+}
+
+.footer_description:hover{
+  color: #5f43ff
 }
 
 .footer_divSocialMedia {

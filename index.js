@@ -1,3 +1,4 @@
+
 let icon = document.getElementById("lightDarkMode");
 let body = document.getElementById("body");
 let header = document.getElementById("header");
@@ -14,3 +15,11 @@ icon.onclick = function () {
 };
 
 body.addEventListener("", () => {});
+
+//Library for scroll animations---------------------------------------------------------------//
+
+AOS.init({
+  duration:800
+});
+
+
