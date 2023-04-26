@@ -667,6 +667,89 @@ footer {
     display: grid;
   }
   .My-Experiencies_Works_Div {
-    margin: 150px;
+    margin: 250px;
+  }
+
+  .column {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 130px;
+  }
+
+  .Mi-info-div-MyImg_img {
+    width: 550px;
+    display: flex;
+    border-radius: 150px;
+  }
+
+  .Mi-info {
+    height: auto;
+  }
+
+  .Mi-info_div {
+    gap: 25px;
+    margin-top: 20px;
+  }
+
+  .Mi-info_p {
+    text-align: center;
+    font-size: 27px;
+    height: 120px;
+  }
+
+  .Mi-info_technologies {
+    justify-content: center;
+  }
+
+  .My-habilities_p {
+    font-size: 27px;
+  }
+
+  .My-habilities-info-description_h3 {
+    font-size: 27px;
+  }
+
+  .My-Experiencies_description {
+    font-size: 26px;
+  }
+
+  .My-Experiencies-DivBtn_Btn {
+    width: 420px;
+    height: 100px;
+    font-size: 34px;
+    font-weight: 700;
+  }
+
+  .My-Experiencies_Works_Div {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .My-Experiencies_Works_Div a {
+    width: 570px;
+    height: auto;
+  }
+
+  .My-Experiencies_Works_Div_ToolsImg {
+    width: 50px;
+    margin: 10px;
+  }
+
+  .My-Experiencies_Works_Div_h5 {
+    font-weight: 700;
+    font-size: 35px;
+  }
+
+  .My-Experiencies_Works_Div_p {
+    margin: 15px;
+    font-size: 26px;
+    width: 550px;
+    text-align: center;
+    letter-spacing: -0.9px;
+    word-spacing: 2px;
+  }
+
+  .My-Experiencies_Works_Div_p b {
+    font-size: 30px;
   }
 }
