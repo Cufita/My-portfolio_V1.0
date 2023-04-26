@@ -23,8 +23,8 @@
 }
 
 .container {
-  margin-left: 260px;
-  margin-right: 260px;
+  margin-left: 20vw;
+  margin-right: 20vw;
 }
 
 .column {
@@ -116,7 +116,7 @@ header div nav ol ul a {
   color: var(--main-letters-color);
 }
 
-header div nav ol ul a:after{
+header div nav ol ul a:after {
   content: "";
   width: 0;
   height: 4px;
@@ -124,17 +124,17 @@ header div nav ol ul a:after{
   position: absolute;
   bottom: 0;
   right: 50%;
-  transition: all .5s;
+  transition: all 0.5s;
   will-change: width;
 }
 
-header div nav ol ul a:hover:after{
+header div nav ol ul a:hover:after {
   width: 100%;
   right: 0;
   color: #856fff;
 }
 
-header div nav ol ul a button{
+header div nav ol ul a button {
   width: 85px;
   height: 25px;
   margin: none;
@@ -153,10 +153,9 @@ header div nav ol ul a button{
   justify-content: center;
   align-items: center;
   cursor: pointer;
-
 }
 
-header div nav ol ul a button:hover{
+header div nav ol ul a button:hover {
   background-color: #2599ff;
 }
 
@@ -406,7 +405,6 @@ header div nav ol ul a button:hover{
 /*------------------------------------------------------/* Css of My experiencies */ /*----------------------------------------------*/
 
 .My-Experiencies {
-  display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   background-color: var(--creme-background-color);
@@ -455,7 +453,6 @@ header div nav ol ul a button:hover{
 
 .My-Experiencies_description {
   display: flex;
-  width: 758px;
   margin: auto;
 
   font-family: "DM Sans";
@@ -528,7 +525,7 @@ header div nav ol ul a button:hover{
   margin: 15px;
 }
 
-.My-Experiencies_Works_Div a{
+.My-Experiencies_Works_Div a {
   display: flex;
   width: 370px;
   height: 220px;
@@ -544,17 +541,17 @@ header div nav ol ul a button:hover{
   transition: 0.5s;
 }
 
-.My-Experiencies_Works_Div_img:hover{
+.My-Experiencies_Works_Div_img:hover {
   transform: scale(1.1);
 }
 
-.My-Experiencies_Works_Div_Tools{
+.My-Experiencies_Works_Div_Tools {
   display: flex;
   flex-direction: row;
   margin-top: 25px;
 }
 
-.My-Experiencies_Works_Div_ToolsImg{
+.My-Experiencies_Works_Div_ToolsImg {
   display: flex;
   width: 25px;
 }
@@ -587,7 +584,7 @@ header div nav ol ul a button:hover{
   mix-blend-mode: normal;
 }
 
-.My-Experiencies_Works_Div_p b{
+.My-Experiencies_Works_Div_p b {
   font-size: 18px;
 }
 
@@ -609,12 +606,15 @@ footer {
 
 .footer_h5 {
   display: flex;
+  text-align: center;
   font-family: "DM Sans";
   font-style: normal;
   font-weight: 700;
   font-size: 58px;
   line-height: 70px;
   padding-top: 200px;
+  padding-left: 15px;
+  padding-right: 15px;
   /* identical to box height, or 121% */
 
   letter-spacing: -1px;
@@ -631,6 +631,8 @@ footer {
   font-weight: 700;
   font-size: 58px;
   line-height: 70px;
+  padding-left: 15px;
+  padding-right: 15px;
   /* or 121% */
 
   letter-spacing: -1px;
@@ -640,8 +642,8 @@ footer {
   color: #482be7;
 }
 
-.footer_description:hover{
-  color: #5f43ff
+.footer_description:hover {
+  color: #5f43ff;
 }
 
 .footer_divSocialMedia {
@@ -655,4 +657,16 @@ footer {
 .footer_socialMedia {
   display: flex;
   text-decoration: none;
+}
+
+/* Media-Queries  */
+
+@media only screen and (max-width: 1199px) {
+  /* Estilos para computadoras de escritorio y laptops */
+  .My-Experiencies_Works {
+    display: grid;
+  }
+  .My-Experiencies_Works_Div {
+    margin: 150px;
+  }
 }
