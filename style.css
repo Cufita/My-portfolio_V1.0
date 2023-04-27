@@ -780,4 +780,12 @@ footer {
   .My-Experiencies_Works_Div_p b {
     font-size: 30px;
   }
+
+  .footer > h5,
+  p {
+    font-size: 7vw;
+  }
+  .footer > a > p {
+    font-size: 8vw;
+  }
 }
