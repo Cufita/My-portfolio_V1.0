@@ -1,7 +1,8 @@
-
-let icon = document.getElementById("lightDarkMode");
-let body = document.getElementById("body");
-let header = document.getElementById("header");
+const iconoMenu = document.querySelector("#icono_menu");
+const menu = document.getElementById("elem_menu");
+const icon = document.getElementById("lightDarkMode");
+const body = document.getElementById("body");
+const header = document.getElementById("header");
 
 //Change the color of the WebPage------------------------------------------------------------//
 
@@ -19,7 +20,11 @@ body.addEventListener("", () => {});
 //Library for scroll animations---------------------------------------------------------------//
 
 AOS.init({
-  duration:800
+  duration: 800,
 });
 
+//Menu----------------------------------------------------------------//
 
+iconoMenu.addEventListener("click", (e) => {
+  menu;
+});

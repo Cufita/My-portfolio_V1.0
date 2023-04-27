@@ -40,6 +40,22 @@
   padding: none;
 }
 
+/* Css for mobile menu */
+
+.icono_menu {
+  display: none;
+}
+
+.icono_menu img {
+  cursor: pointer;
+  width: 55px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
 /*------------------------------------------------------/* Css of Header */ /*----------------------------------------------*/
 
 header {
@@ -662,6 +678,18 @@ footer {
 /* Media-Queries  */
 
 @media only screen and (max-width: 1199px) {
+  /* Css for the mobile menu when the screen are more smallest */
+
+  .icono_menu {
+    display: flex;
+  }
+
+  .elem_menu {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+  }
+
   /* Estilos para computadoras de escritorio y laptops */
   .My-Experiencies_Works {
     display: grid;
@@ -677,7 +705,7 @@ footer {
   }
 
   .Mi-info-div-MyImg_img {
-    width: 550px;
+    width: 370px;
     display: flex;
     border-radius: 150px;
   }
