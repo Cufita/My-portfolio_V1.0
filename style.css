@@ -53,7 +53,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
 }
 
 /*------------------------------------------------------/* Css of Header */ /*----------------------------------------------*/
@@ -281,7 +280,7 @@ header div nav ol ul a button:hover {
   display: flex;
   background-color: var(--creme-background-color);
   flex-direction: column;
-  height: 850px;
+  height: 950px;
 }
 
 .My-habilities_main {
@@ -355,13 +354,14 @@ header div nav ol ul a button:hover {
 .My-habilities-info {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 .My-habilities-info_description {
   display: flex;
   align-items: center;
   flex-direction: column;
+  width: 160px;
   max-width: 266px;
   padding: 15px;
   gap: 15px;
@@ -534,10 +534,9 @@ header div nav ol ul a button:hover {
 
 .My-Experiencies_Works_Div {
   display: flex;
-  width: 90vw;
   height: 220px;
   flex-direction: column;
-  margin: 15px;
+  margin: 4%;
   margin-bottom: 250px;
 }
 
@@ -680,6 +679,10 @@ footer {
 @media only screen and (max-width: 1199px) {
   /* Css for the mobile menu when the screen are more smallest */
 
+  header {
+    height: 120px;
+  }
+
   .container .column {
     margin: 0vh;
     display: flex;
@@ -689,6 +692,7 @@ footer {
 
   .icono_menu {
     display: flex;
+    align-items: center;
   }
 
   .elem_menu {
@@ -726,7 +730,7 @@ footer {
     display: grid;
   }
   .My-Experiencies_Works_Div {
-    margin: 250px;
+    margin: 270px;
   }
 
   .column {
@@ -753,11 +757,11 @@ footer {
   .Mi-info_p {
     text-align: center;
     font-size: 27px;
-    height: 120px;
   }
 
   .Mi-info_technologies {
     justify-content: center;
+    flex-wrap: wrap;
   }
 
   .My-habilities_p {
@@ -773,7 +777,7 @@ footer {
   }
 
   .My-Experiencies-DivBtn_Btn {
-    width: 420px;
+    width: 70vw;
     height: 100px;
     font-size: 34px;
     font-weight: 700;
@@ -813,17 +817,29 @@ footer {
   }
 
   .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
-  .footer > h5,
-  p {
-    font-size: 10vw;
+  .footer > h5 {
+    font-size: 9vw;
+    padding: 2%;
   }
   .footer > a > p {
-    font-size: 8vw;
+    font-size: 7vw;
   }
 
   .footer_socialMedia img {
     width: 25px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .My-habilities-info {
+    flex-wrap: wrap;
+  }
+  .My-habilities {
+    height: 2100px;
   }
 }
