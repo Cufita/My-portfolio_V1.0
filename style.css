@@ -683,6 +683,15 @@ footer {
     height: 120px;
   }
 
+  header div h1 {
+    font-size: 20px;
+  }
+
+  header .container {
+    margin-left: 12vw;
+    margin-right: 12vw;
+  }
+
   .container .column {
     margin: 0vh;
     display: flex;
@@ -726,6 +735,11 @@ footer {
   }
 
   /* Estilos para computadoras de escritorio y laptops */
+
+  .Mi-info-div_h2 {
+    text-align: center;
+  }
+
   .My-Experiencies_Works {
     display: grid;
   }
@@ -756,7 +770,6 @@ footer {
 
   .Mi-info_p {
     text-align: center;
-    font-size: 27px;
   }
 
   .Mi-info_technologies {
@@ -801,6 +814,7 @@ footer {
   .My-Experiencies_Works_Div_h5 {
     font-weight: 700;
     font-size: 35px;
+    text-align: center;
   }
 
   .My-Experiencies_Works_Div_p {
@@ -816,18 +830,23 @@ footer {
     font-size: 30px;
   }
 
+  .My-Experiencies_Works_Div_p b a {
+    margin: auto;
+  }
+
   .footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 700px;
   }
 
   .footer > h5 {
-    font-size: 9vw;
+    font-size: 15vw;
     padding: 2%;
   }
   .footer > a > p {
-    font-size: 7vw;
+    font-size: 8vw;
   }
 
   .footer_socialMedia img {
@@ -836,10 +855,24 @@ footer {
 }
 
 @media only screen and (max-width: 450px) {
+  .icono_menu img {
+    width: 40px;
+    height: 40px;
+  }
+
   .My-habilities-info {
     flex-wrap: wrap;
   }
   .My-habilities {
     height: 2100px;
+  }
+
+  .Mi-info-div_h2 {
+    text-align: center;
+    font-size: 12vw;
+  }
+
+  .footer_divSocialMedia {
+    margin: 60px;
   }
 }
